@@ -2,6 +2,8 @@ package org.java.spring_crud6.db.pojo;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,6 +24,7 @@ public class Author {
     @Column(nullable = false, length = 64)
     private String surname;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "author")
     private List<Book> books;
 

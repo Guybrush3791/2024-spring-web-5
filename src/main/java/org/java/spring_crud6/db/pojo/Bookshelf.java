@@ -2,6 +2,8 @@ package org.java.spring_crud6.db.pojo;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,6 +24,7 @@ public class Bookshelf {
     @Column(nullable = false, length = 128)
     private String address;
 
+    @JsonIgnore
     @ManyToMany
     private List<Book> books;
 
@@ -67,6 +70,11 @@ public class Bookshelf {
 
     public void setBooks(List<Book> books) {
         this.books = books;
+    }
+
+    public void addBook(Book book) {
+
+        books.add(book);
     }
 
     @Override

@@ -40,7 +40,9 @@ public class SpringCrud6Application implements CommandLineRunner {
 	 * verificare in DbEaver se sono state create correttamente
 	 * 
 	 * --- CORREZIONE: 15:30 ---
-	 * 
+	 */
+
+	/**
 	 * FASE 2: CRUD on BOOK
 	 * Definire controller che gestira' la tabella Book.
 	 * Definire i metodi di tipo REST (da consumare con
@@ -60,6 +62,7 @@ public class SpringCrud6Application implements CommandLineRunner {
 	 * della tabella book in funzione delle proprie
 	 * relazioni (e dei proprietari delle relazioni)
 	 * 
+	 * --- CORREZIONE: 17:15 ---
 	 */
 
 	@Autowired

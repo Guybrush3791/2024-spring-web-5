@@ -65,6 +65,21 @@ public class SpringCrud6Application implements CommandLineRunner {
 	 * --- CORREZIONE: 17:15 ---
 	 */
 
+	/**
+	 * 
+	 * FASE 3: FRONTEND
+	 * Definire in nuovo progetto Vue.js una pagina
+	 * che consumi i servizi REST definiti in precedenza,
+	 * dando la possibilita' all'utente di:
+	 * - vedere tutti i libri con autore e librerie associate
+	 * - creare un nuovo libro
+	 * - modificare un libro esistente
+	 * - eliminare un libro esistente
+	 * 
+	 * --- CORREZIONE: 12:00 ---
+	 * 
+	 */
+
 	@Autowired
 	private AuthorServ authorServ;
 

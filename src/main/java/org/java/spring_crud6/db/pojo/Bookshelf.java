@@ -77,6 +77,19 @@ public class Bookshelf {
         books.add(book);
     }
 
+    public void removeBook(Book book) {
+
+        for (int i = 0; i < books.size(); i++) {
+
+            Book b = books.get(i);
+
+            if (b.getId() == book.getId()) {
+                books.remove(i);
+                return;
+            }
+        }
+    }
+
     @Override
     public String toString() {
 

@@ -2,7 +2,7 @@ package org.java.spring_crud6.db.pojo;
 
 import java.util.List;
 
-import org.java.spring_crud6.web.dto.CreateBookDto;
+import org.java.spring_crud6.web.dto.BookDto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -37,7 +37,7 @@ public class Book {
         setAuthor(author);
     }
 
-    public Book(CreateBookDto createBookDto) {
+    public Book(BookDto createBookDto) {
 
         setTitle(createBookDto.getTitle());
     }

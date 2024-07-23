@@ -2,7 +2,7 @@ package org.java.spring_crud6.web.dto;
 
 import java.util.List;
 
-public class CreateBookDto {
+public class BookDto {
 
     private String title;
     private int authorId;

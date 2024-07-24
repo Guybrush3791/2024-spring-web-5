@@ -80,6 +80,20 @@ public class SpringCrud6Application implements CommandLineRunner {
 	 * 
 	 */
 
+	/**
+	 * 
+	 * FASE 4: CRUD on BOOKSHELF
+	 * Definire all'interno del controller dedicato a Bookshelf
+	 * un metodo per ottenere la lista di tutte le librerie con
+	 * tutte le realzioni associate (libri e relativi autori).
+	 * 
+	 * Dopo aver testato l'API attraverso PostMan, generare pagina
+	 * dedicata in progetto front-end per la visualizzazione di
+	 * tutti i dati (librerie con relativi libri e autori).
+	 * 
+	 * --- CORREZIONE: 11:30 ---
+	 * 
+	 */
 	@Autowired
 	private AuthorServ authorServ;
 

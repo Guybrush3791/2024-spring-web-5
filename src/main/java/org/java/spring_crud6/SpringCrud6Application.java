@@ -83,6 +83,9 @@ public class SpringCrud6Application implements CommandLineRunner {
 	/**
 	 * 
 	 * FASE 4: CRUD on BOOKSHELF
+	 * Introdurre i vincoli di integrita' all'interno della classe
+	 * Bookshelf.
+	 * 
 	 * Definire all'interno del controller dedicato a Bookshelf
 	 * un metodo per ottenere la lista di tutte le librerie con
 	 * tutte le realzioni associate (libri e relativi autori).
@@ -94,6 +97,7 @@ public class SpringCrud6Application implements CommandLineRunner {
 	 * --- CORREZIONE: 11:30 ---
 	 * 
 	 */
+
 	@Autowired
 	private AuthorServ authorServ;
 

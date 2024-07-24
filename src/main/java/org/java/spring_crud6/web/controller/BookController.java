@@ -45,6 +45,16 @@ public class BookController {
         return ResponseEntity.ok(books);
     }
 
+    @GetMapping("/bookshelfs/{bookshelfId}")
+    public ResponseEntity<List<Book>> getBooksByBookshelf(
+            @PathVariable int bookshelfId) {
+
+        Bookshelf bookshelf = bookshelfServ.findById(bookshelfId).get();
+        List<Book> books = bookServ.findByBookshelf(bookshelf);
+
+        return ResponseEntity.ok(books);
+    }
+
     @PostMapping("")
     public ResponseEntity<Book> createBook(
             @RequestBody BookDto createBookDto) {

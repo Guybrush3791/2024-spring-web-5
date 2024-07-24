@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.java.spring_crud6.db.pojo.Book;
+import org.java.spring_crud6.db.pojo.Bookshelf;
 import org.java.spring_crud6.db.repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,11 @@ public class BookServ {
     public List<Book> findAll() {
 
         return bookRepo.findAll();
+    }
+
+    public List<Book> findByBookshelf(Bookshelf bookshelf) {
+
+        return bookRepo.findByBookshelfs(bookshelf);
     }
 
     public Optional<Book> findById(int id) {

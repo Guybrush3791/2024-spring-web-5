@@ -25,6 +25,8 @@ public class BookshelfController {
 
         List<Bookshelf> bookshelfs = bookshelfServ.findAll();
 
+        bookshelfs.forEach(bs -> System.out.println(bs + "\n" + bs.getBooks()));
+
         return ResponseEntity.ok(bookshelfs);
     }
 

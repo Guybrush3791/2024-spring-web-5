@@ -14,6 +14,16 @@ import jakarta.persistence.ManyToMany;
 @Entity
 public class Bookshelf {
 
+    // name : String : 64 : not null
+    // address : String : 128 : not null
+    // books : List<Book> : not null
+
+    // setName : void : Exception : name != null && name.length() <= 64
+    // setAddress : void : Exception : address != null && address.length() <= 128
+    // removeBook : void : void : book != null
+
+    // ------------------------------------------------------------------------------
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

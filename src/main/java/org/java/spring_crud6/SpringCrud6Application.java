@@ -130,15 +130,28 @@ public class SpringCrud6Application implements CommandLineRunner {
 			System.out.println(author3);
 			System.out.println("--------------------------");
 
-			Book book1 = new Book("Il libro", author1);
-			Book book2 = new Book("Il libro 2", author1);
-			Book book3 = new Book("Il libro 3", author2);
-			Book book4 = new Book("Il libro 4", author3);
+			// 10 fake book with real titles
+			Book book1 = new Book("Signore degli anelli", author1);
+			Book book2 = new Book("Silmarillion", author2);
+			Book book3 = new Book("Nome della rosa", author3);
+			Book book4 = new Book("Vecchio e il mare", author1);
+			Book book5 = new Book("Gattopardo", author2);
+			Book book6 = new Book("Deserto dei tartari", author3);
+			Book book7 = new Book("Barone rampante", author1);
+			Book book8 = new Book("Visconte dimezzato", author2);
+			Book book9 = new Book("Cavaliere inesistente", author3);
+			Book book10 = new Book("Pendolo di Foucault", author1);
 
 			bookServ.save(book1);
 			bookServ.save(book2);
 			bookServ.save(book3);
 			bookServ.save(book4);
+			bookServ.save(book5);
+			bookServ.save(book6);
+			bookServ.save(book7);
+			bookServ.save(book8);
+			bookServ.save(book9);
+			bookServ.save(book10);
 
 			System.out.println(book1);
 			System.out.println("--------------------------");
@@ -149,9 +162,9 @@ public class SpringCrud6Application implements CommandLineRunner {
 			System.out.println(book4);
 			System.out.println("--------------------------");
 
-			List<Book> bookList1 = Arrays.asList(book1, book2);
-			List<Book> bookList2 = Arrays.asList(book3, book4);
-			List<Book> bookList3 = Arrays.asList(book1, book3);
+			List<Book> bookList1 = Arrays.asList(book1, book2, book5, book8, book10);
+			List<Book> bookList2 = Arrays.asList(book3, book4, book6, book7, book9);
+			List<Book> bookList3 = Arrays.asList(book1, book3, book5, book7, book9);
 
 			Bookshelf bookshelf1 = new Bookshelf("Libreria 1", "Via Roma 1", bookList1);
 			Bookshelf bookshelf2 = new Bookshelf("Libreria 2", "Via Roma 2", bookList2);
